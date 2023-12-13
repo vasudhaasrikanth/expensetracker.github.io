@@ -1,0 +1,231 @@
+body{
+    background-color:white;
+    color:#213A40;
+}
+p{
+    font-size: 1.2rem;
+    color:#213A40;
+    font-weight: 400;
+    line-height: 2rem;
+}
+svg{
+    height:3.5rem;
+    width: 3.5rem;
+}
+.navi p{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #59D99D;
+}
+.navi sway{
+    color:#213A40;
+    font-weight:1000;
+}
+
+.nav-link{
+    color:#213A40;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.bg img{
+    min-width: 100%;
+    height: auto;
+}
+#Home{
+    min-height:80vh;
+    display:grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    justify-content: center;
+    column-gap:1rem;
+}
+.content{
+    margin-right: 3rem;
+}
+.content p{
+    text-align: justify;
+    margin-right: 3rem;
+    margin-top: 2rem;
+}
+.content .btn{
+    background-color: #57F2AA;
+    border-width: 2px;
+    font-size:1.5rem;
+    font-weight: 500;
+    padding:1rem;
+    margin-top: 2rem;
+}
+.content a{
+    color:#213A40;
+}
+.parallax {
+    /* The image used */
+    background-color: white;
+  
+    /* Set a specific height */
+    min-height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#About{
+    padding:2.5rem 5%;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content:center;
+    text-align: justify;
+    align-items: center;
+    gap:1rem;   
+}
+.words1{
+    grid-row-start: 1;
+    grid-column-start: 2;
+ 
+    grid-row-end: 2;
+    grid-column-end: 4;
+}
+.words2{
+    grid-row-start: 2;
+   grid-column-start: 1;
+
+   grid-row-end: 3;
+   grid-column-end: 3;
+}
+.words3{
+    grid-row-start: 3;
+   grid-column-start: 2;
+
+   grid-row-end: 4;
+   grid-column-end: 4;
+}
+#About img{
+    max-width:100%;
+    height:auto;
+}
+#About h2{
+    color: #59D99D;
+    padding-bottom: 1rem;
+}
+#Features{
+    margin-top: 1rem;
+    background-color: #D5F9E4;
+}
+#Features p{
+    text-align: justify;
+}
+#Features h3{
+    color:#59D99D;
+}
+#Contact{
+    background: linear-gradient(0deg, white, #D5F9E4);
+    margin-top: -1.5rem;
+}
+
+hr{
+    color:#ACACAD;
+}
+
+
+.wrapper { 
+	width: 100%; 
+	padding: 2rem 25% ; 
+	border-radius: 5px; 
+} 
+
+.wrapper h2 { 
+	text-align: center; 
+	margin-bottom: 20px; 
+	text-transform: uppercase; 
+	letter-spacing: 3px; 
+	color: #213A40; 
+} 
+
+.wrapper .input_field { 
+	margin-bottom: 10px; 
+} 
+
+.wrapper 
+	.input_field 
+	input[type="text"], 
+.wrapper textarea { 
+	border: 1px solid #D5F9E4;
+	width: 100%; 
+	padding: 10px; 
+} 
+
+.wrapper textarea { 
+	height: 5rem; 
+} 
+
+.wrapper .btn{ 
+	border: 0px; 
+	margin-top: 2rem; 
+	padding: 0.5rem; 
+	text-align: center; 
+	background: #57F2AA; 
+	color: #213A40;
+	text-transform: uppercase; 
+	letter-spacing: 0.2rem; 
+	font-weight: bold; 
+	border-radius: 10px; 
+} 
+
+#error_message { 
+	margin-bottom: 20px; 
+	background: #fe8b8e; 
+	padding: 0px; 
+	text-align: center; 
+	font-size: 14px; 
+	transition: all 0.5s ease; 
+}
+#success_message{
+    margin-bottom: 20px; 
+	background: #57F2AA; 
+	padding: 0px; 
+	text-align: center; 
+	font-size: 14px; 
+	transition: all 0.5s ease; 
+
+}
+
+
+@media (max-width:768px){
+    p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    #Home{
+        display:flex;
+        flex-direction:column;
+        gap:2rem;
+    }
+    .content{
+    margin-left: 15%;
+    }
+    #About{
+        display:flex;
+        flex-direction: column;
+        gap:2.5rem
+    }
+    #About h2{
+        text-align: center;
+    }
+    #About img{
+        max-width:50%;
+        height:auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    
+}
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
