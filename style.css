@@ -1,11 +1,23 @@
 body{
+    font-family: 'Oswald', sans-serif;
     background-color:white;
     color:#213A40;
 }
+.mode {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .dark-mode {
+    background-color:#213A40;
+    color:white;
+}
+  
 p{
+    font-family: 'Quicksand', sans-serif;
     font-size: 1.2rem;
-    color:#213A40;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 2rem;
 }
 svg{
@@ -23,7 +35,7 @@ svg{
 }
 
 .nav-link{
-    color:#213A40;
+    color: #59D99D;
     font-weight: 500;
     font-size: 1.2rem;
 }
@@ -60,7 +72,7 @@ svg{
 }
 .parallax {
     /* The image used */
-    background-image: url("./images/.jpg");
+    background-image: url("./images/");
   
     /* Set a specific height */
     min-height: 100%;
@@ -115,12 +127,15 @@ svg{
     background-color: #D5F9E4;
 }
 #Features p{
+    color:#213A40;
     text-align: justify;
 }
 #Features h3{
     color:#59D99D;
 }
 #Contact{
+    margin-bottom: -2rem;
+    color: #213A40;
     background: linear-gradient(0deg, white, #D5F9E4);
 
 }
@@ -144,10 +159,11 @@ hr{
 	margin-bottom: 20px; 
 	text-transform: uppercase; 
 	letter-spacing: 3px; 
-	color: #213A40; 
 } 
 
 .wrapper .input_field { 
+    font-family: 'Quicksand', sans-serif;
+    color:#ACACAD;
 	margin-bottom: 10px; 
 } 
 
@@ -165,7 +181,8 @@ hr{
 } 
 
 .wrapper .btn{ 
-	border: 0px; 
+	border-width: 2px;
+    border-color: #57F2AA;
 	margin-top: 2rem; 
 	padding: 0.5rem; 
 	text-align: center; 

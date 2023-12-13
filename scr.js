@@ -1,3 +1,9 @@
+document.querySelector(".mode").addEventListener("click",function() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
+);
+
 document.querySelector(".content .btn").addEventListener("click",function(){
     document.querySelector(".content .btn").style.borderColor="#213A40";
     document.querySelector(".content .btn").style.color="#213A40";
@@ -10,8 +16,13 @@ for(var i=0;i<navButton.length;i++){
         this.style.borderRadius = "20px";
     });
 }
+document.querySelector(".wrapper .btn").addEventListener("click",function(){
+    document.querySelector(".wrapper .btn").style.borderColor="#213A40";
+});
+
 
 function validate() {
+    
     let name = document.getElementById("name").value;
     let subject = document.getElementById("subject").value;
     let phone = document.getElementById("phone").value;
