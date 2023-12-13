@@ -209,6 +209,12 @@ hr{
     .content{
     margin-left: 15%;
     }
+    .content .btn{
+        border-width: 2px;
+        font-size:1.2rem;
+        padding:0.75rem;
+        margin-top: 1rem;
+    }
     #About{
         display:flex;
         flex-direction: column;
