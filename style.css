@@ -11,7 +11,7 @@ body{
 
   .dark-mode {
     background-color:#213A40;
-    color:white;
+    color:#e6f9eefb;
 }
   
 p{
@@ -36,9 +36,17 @@ svg{
 }
 
 .nav-link{
+    font-family: 'Quicksand', sans-serif;
     color: #59D99D;
-    font-weight: 900;
+    font-weight:bolder;
     font-size: 1.2rem;
+}
+.nav-link:hover{
+    color: #213A40;
+}
+
+.dark-mode .nav-link:hover{
+    color: #e6f9eefb;
 }
 .navbar-toggler{
     border: none;
@@ -65,11 +73,18 @@ svg{
 }
 .content .btn{
     background-color: #57F2AA;
-    border-width: 2px;
+    border-width: 2px solid;
     font-size:1.5rem;
     font-weight: 500;
     padding:1rem;
     margin-top: 2rem;
+}
+.content .btn:hover{
+    box-shadow: 4px 4px 8px #59D99D;
+}
+.dark-mode .content .btn{
+    background-color: #57F2AA;
+
 }
 .content a{
     color:#213A40;
@@ -183,15 +198,14 @@ hr{
 
 .wrapper .btn{ 
 	border-width: 2px;
-    border-color: #57F2AA;
+    border-color: #213A40;
 	margin-top: 2rem; 
 	padding: 0.5rem; 
 	text-align: center; 
-	background: #57F2AA; 
-	color: #213A40;
+	background: #213A40; 
+	color:white ;
 	text-transform: uppercase; 
 	letter-spacing: 0.2rem; 
-	font-weight: bold; 
 	border-radius: 10px; 
 } 
 
