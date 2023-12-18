@@ -75,15 +75,14 @@ svg{
     color:#213A40;
 }
 .parallax {
-    /* The image used */
     background-image: url("./images/bg1.png");
     min-height: 100%;
-    opacity: 50%;
     background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 #About{
     opacity:100%;
     padding:2.5rem 5%;
@@ -216,6 +215,12 @@ hr{
 
 
 @media (max-width:768px){
+    .parallax {
+        background-repeat:repeat-y;
+        background-size:auto;
+          background-attachment: scroll;
+        }
+    
     p{
         font-size: 1rem;
         line-height: 1.5rem;
@@ -250,10 +255,4 @@ hr{
         display: block;
     }
 
-    
 }
-@media only screen and (max-device-width: 1366px) {
-    .parallax {
-      background-attachment: scroll;
-    }
-  }
