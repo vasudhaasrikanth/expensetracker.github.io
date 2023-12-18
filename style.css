@@ -73,21 +73,24 @@ svg{
 }
 .content .btn{
     background-color: #57F2AA;
-    border-width: 2px solid;
     font-size:1.5rem;
     font-weight: 500;
     padding:1rem;
     margin-top: 2rem;
 }
 .content .btn:hover{
-    box-shadow: 4px 4px 8px #59D99D;
-}
-.dark-mode .content .btn{
-    background-color: #57F2AA;
-
+    border:2px solid;
+    box-shadow: 4px 4px 8px #213A40;
+    background-color: transparent;
 }
 .content a{
     color:#213A40;
+}
+.dark-mode .content .btn:hover{
+    box-shadow: 4px 4px 8px #57F2AA;
+}
+.dark-mode .content a{
+    color: #57F2AA;
 }
 .parallax {
     background-image: url("./images/bg1.png");
